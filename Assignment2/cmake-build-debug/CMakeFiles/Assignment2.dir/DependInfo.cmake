@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/User Files/Documents/GitHub/CSS342/Assignment2/main.cpp" "D:/User Files/Documents/GitHub/CSS342/Assignment2/cmake-build-debug/CMakeFiles/Assignment2.dir/main.cpp.obj"
-  "D:/User Files/Documents/GitHub/CSS342/Assignment2/timespan.cpp" "D:/User Files/Documents/GitHub/CSS342/Assignment2/cmake-build-debug/CMakeFiles/Assignment2.dir/timespan.cpp.obj"
+  "C:/Users/Dai Nguyen/Documents/GitHub/CSS342/Assignment2/main.cpp" "C:/Users/Dai Nguyen/Documents/GitHub/CSS342/Assignment2/cmake-build-debug/CMakeFiles/Assignment2.dir/main.cpp.obj"
+  "C:/Users/Dai Nguyen/Documents/GitHub/CSS342/Assignment2/timespan.cpp" "C:/Users/Dai Nguyen/Documents/GitHub/CSS342/Assignment2/cmake-build-debug/CMakeFiles/Assignment2.dir/timespan.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

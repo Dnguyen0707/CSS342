@@ -1,4 +1,4 @@
-# Install script for directory: D:/User Files/Documents/GitHub/CSS342/Assignment2
+# Install script for directory: C:/Users/Dai Nguyen/Documents/GitHub/CSS342/Assignment2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/User Files/Documents/GitHub/CSS342/Assignment2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Dai Nguyen/Documents/GitHub/CSS342/Assignment2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

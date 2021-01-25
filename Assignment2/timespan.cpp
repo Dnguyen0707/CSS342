@@ -114,9 +114,9 @@ void TimeSpan::setHour(int hour)
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: return minute while converting total second to just minute, no decimal
+ * precondition: doesn't take input
+ * postcondition: return minute as int
  */
 int TimeSpan::getMinute() const
 {
@@ -126,9 +126,9 @@ int TimeSpan::getMinute() const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: store minute
+ * precondition: take minute as a int input
+ * postcondition: stored minute into the object
  */
 void TimeSpan::setMinute(int minute)
 {
@@ -136,9 +136,9 @@ void TimeSpan::setMinute(int minute)
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: return second while converting total second to just the remaining second after subtracting hour and minute, no decimal
+ * precondition: doesn't take input
+ * postcondition: return hour as int
  */
 int TimeSpan::getSecond() const
 {
@@ -148,9 +148,9 @@ int TimeSpan::getSecond() const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: store second
+ * precondition: take second as a int input
+ * postcondition: stored second into the object
  */
 void TimeSpan::setSecond(int second)
 {
@@ -158,9 +158,9 @@ void TimeSpan::setSecond(int second)
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: get the total seconds in the TimeSpan, if the totalSecond does not match with hour, minute, and second, then run timeConvert
+ * precondition: required hour, minute and second
+ * postcondition: return total seconds as long
  */
 long TimeSpan::getTotalSecond()
 {
@@ -177,9 +177,21 @@ long TimeSpan::getTotalSecond()
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: store total second
+ * precondition: take total second as a long input
+ * postcondition: stored minute into the object
+ */
+void TimeSpan::setTotalSecond(long number)
+{
+    this->totalSecond = number;
+}
+
+
+
+/*
+ * purpose: convert total seconds to hour, minute, and second
+ * precondition: take totalSecond as a long input
+ * postcondition: call setter for hour, minute, and second
  */
 void TimeSpan::timeConvert(long totalSecond)
 {
@@ -192,20 +204,12 @@ void TimeSpan::timeConvert(long totalSecond)
     setSecond(second);
 }
 
-/*
- * purpose:
- * precondition:
- * postcondition:
- */
-void TimeSpan::setTotalSecond(long number)
-{
-    this->totalSecond = number;
-}
+
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: check to see if the time is positive
+ * precondition: have total second calculated
+ * postcondition: return true if the time is greater than or equal to 0
  */
 bool TimeSpan::isPositive() const
 {
@@ -213,9 +217,9 @@ bool TimeSpan::isPositive() const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: add 2 TimeSpan object together
+ * precondition: take a TimeSpan object as an input
+ * postcondition: return a new object that contained the sum of the two
  */
 TimeSpan TimeSpan::operator+(const TimeSpan &ts) const
 {
@@ -225,9 +229,9 @@ TimeSpan TimeSpan::operator+(const TimeSpan &ts) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: subtract 2 TimeSpan object together
+ * precondition: take a TimeSpan object as an input
+ * postcondition: return a new object that contained the subtracted value of the two
  */
 TimeSpan TimeSpan::operator-(const TimeSpan &ts) const
 {
@@ -237,9 +241,9 @@ TimeSpan TimeSpan::operator-(const TimeSpan &ts) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: multiply the current TimeSpan object with a number
+ * precondition: take an int as an input
+ * postcondition: return a new object that contained the total of the two
  */
 TimeSpan TimeSpan::operator*(unsigned int number) const
 {
@@ -249,9 +253,9 @@ TimeSpan TimeSpan::operator*(unsigned int number) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: check if the current TimeSpan object is the same as the compared TimeSpan object
+ * precondition: take a TimeSpan as an input
+ * postcondition: return true if both TimeSpan have the same total seconds
  */
 bool TimeSpan::operator==(const TimeSpan &ts) const
 {
@@ -259,9 +263,9 @@ bool TimeSpan::operator==(const TimeSpan &ts) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: check if the current TimeSpan object is not the same as the compared TimeSpan object
+ * precondition: take a TimeSpan as an input
+ * postcondition: return true if both TimeSpan have different total seconds
  */
 bool TimeSpan::operator!=(const TimeSpan &ts) const
 {
@@ -269,9 +273,9 @@ bool TimeSpan::operator!=(const TimeSpan &ts) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: add seconds into the original Timespan
+ * precondition: take an int number as an input
+ * postcondition: increase the current object's total second
  */
 void TimeSpan::operator+=(unsigned int number)
 {
@@ -279,9 +283,9 @@ void TimeSpan::operator+=(unsigned int number)
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: subtract seconds into the original Timespan
+ * precondition: take an int number as an input
+ * postcondition: decrease the current object's total second
  */
 void TimeSpan::operator-=(unsigned int number)
 {
@@ -289,9 +293,9 @@ void TimeSpan::operator-=(unsigned int number)
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: comparing total seconds to check if the current object less than input TimeSpan
+ * precondition: take a TimeSpan object as an input
+ * postcondition: return true of the current object is less than the input TimeSpan
  */
 bool TimeSpan::operator<(const TimeSpan &ts) const
 {
@@ -299,9 +303,9 @@ bool TimeSpan::operator<(const TimeSpan &ts) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: comparing total seconds to check if the current object more than input TimeSpan
+ * precondition: take a TimeSpan object as an input
+ * postcondition: return true of the current object is more than the input TimeSpan
  */
 bool TimeSpan::operator>(const TimeSpan &ts) const
 {
@@ -309,9 +313,9 @@ bool TimeSpan::operator>(const TimeSpan &ts) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: comparing total seconds to check if the current object less than or equal to input second
+ * precondition: take an int number as an input
+ * postcondition: return true of the current object is less than or equal the input an int number
  */
 bool TimeSpan::operator<=(unsigned int number) const
 {
@@ -319,9 +323,9 @@ bool TimeSpan::operator<=(unsigned int number) const
 }
 
 /*
- * purpose:
- * precondition:
- * postcondition:
+ * purpose: comparing total seconds to check if the current object more than or equal to input second
+ * precondition: take an int number as an input
+ * postcondition: return true of the current object is more than or equal the input an int number
  */
 bool TimeSpan::operator>=(unsigned int number) const
 {
