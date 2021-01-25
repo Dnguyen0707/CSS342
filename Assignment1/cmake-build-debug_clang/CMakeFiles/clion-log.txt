@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -D CMAKE_<CXX>_COMPILER=/usr/local/opt/llvm/bin/clang -G "CodeBlocks - Unix Makefiles" "/mnt/d/User Files/Documents/GitHub/CSS342/Assignment1"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/d/User Files/Documents/GitHub/CSS342/Assignment1/cmake-build-debug_clang

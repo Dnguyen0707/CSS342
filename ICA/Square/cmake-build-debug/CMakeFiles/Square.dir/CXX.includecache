@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/User Files/Documents/GitHub/CSS342/Square/main.cpp
+iostream
+-
+cassert
+-
+square.h
+D:/User Files/Documents/GitHub/CSS342/Square/square.h
+
+D:/User Files/Documents/GitHub/CSS342/Square/square.cpp
+square.h
+D:/User Files/Documents/GitHub/CSS342/Square/square.h
+
+D:/User Files/Documents/GitHub/CSS342/Square/square.h
+ostream
+-
+

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/User Files/Documents/GitHub/CSS342/ICA/DisplayLinkedBag/Node.cpp
+Node.h
+D:/User Files/Documents/GitHub/CSS342/ICA/DisplayLinkedBag/Node.h
+iostream
+-
+
+D:/User Files/Documents/GitHub/CSS342/ICA/DisplayLinkedBag/Node.h
+iostream
+-
+
+D:/User Files/Documents/GitHub/CSS342/ICA/DisplayLinkedBag/main.cpp
+iostream
+-
+Node.cpp
+D:/User Files/Documents/GitHub/CSS342/ICA/DisplayLinkedBag/Node.cpp
+cstdlib
+-
+

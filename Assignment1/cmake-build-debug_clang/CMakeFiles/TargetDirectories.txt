@@ -1,0 +1,3 @@
+/mnt/d/User Files/Documents/GitHub/CSS342/Assignment1/cmake-build-debug_clang/CMakeFiles/rebuild_cache.dir
+/mnt/d/User Files/Documents/GitHub/CSS342/Assignment1/cmake-build-debug_clang/CMakeFiles/edit_cache.dir
+/mnt/d/User Files/Documents/GitHub/CSS342/Assignment1/cmake-build-debug_clang/CMakeFiles/Assignment1.dir
